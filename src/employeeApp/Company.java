@@ -13,4 +13,26 @@ public class Company {
         this.giro = giro;
 
     }
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getGiro() {
+        return giro;
+    }
+
+    public String[] getDeveloperNames() {
+        return developerNames;
+    }
+
+
+    public void addEmployee(int index, String name){
+        if(developerNames[index] == null){
+            developerNames[index] = name;
+        }
+    }
 }

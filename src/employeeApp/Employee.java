@@ -7,7 +7,8 @@ public class Employee {
     private String password;
     private String[] healthPlans;
 
-    public Employee(String fullName, String email, String password, String[] healthPlans){
+    public Employee(int id, String fullName, String email, String password, String[] healthPlans){
+        this.id = id;
         this.fullName = fullName;
         this.email = email;
         this.password = password;
@@ -15,36 +16,41 @@ public class Employee {
 
     }
 
-    public String getFullName(){
-        return this.fullName;
+    public int getId() {
+        return id;
     }
 
-    public void setFullName(){
-        this.fullName = fullName;
+    public String getFullName() {
+        return fullName;
     }
 
-    public String getEmail(){
-        return this.fullName;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmail(){
-        this.fullName = fullName;
+    public String getPassword() {
+        return password;
     }
 
-    public String[] getHealthPlans(){
-        return this.healthPlans;
+    public String[] getHealthPlans() {
+        return healthPlans;
     }
 
-    public void setHealthPlans(){
-        this.healthPlans = healthPlans;
+    public void addHealthPlan(int index, String name){
+
+        if(healthPlans[index]== null){
+            this.healthPlans[index] = name;
+        }else{
+            System.out.println("Index dolu");
+        }
+
+
     }
 
 
     public String toString() {
         return "Name: " + fullName + ", Email: " + email + "HealhPlan "  + healthPlans;
     }
-    private void addHealthPlan(int index, String name){
 
-    }
 
 }

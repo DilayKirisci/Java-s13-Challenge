@@ -16,21 +16,19 @@ public class HealthPlan {
     public String getName(){
         return this.name;
     }
-
-    public void setName(){
+    public void setName(String name){
         this.name = name;
     }
     public Plan getPlan(){
         return this.plan;
     }
-    public void setPlan(){
+    public void setPlan(Plan plan){
         this.plan = plan;
     }
 
     public String toString(){
         return "id: " + id + "name: " + name + " plan " + plan;
     }
-
 
 
 }

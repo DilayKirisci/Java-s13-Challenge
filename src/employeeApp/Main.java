@@ -13,6 +13,16 @@ public class Main
     private static void workWithData ()
     {
 
+        HealthPlan plan1 = new HealthPlan(1, "a sigorta", Plan.ADVANCE);
+
+        HealthPlan plan2 = new HealthPlan(1, "b sigorta", Plan.BASIC);
+        String[] healthPlans = new String[3];
+        healthPlans[0] = plan1.getName();
+
+        Employee developer = new Employee(1, "dilay", "idla@gma.com", "1234", healthPlans);
+
+
+
     }
 
     /**
